@@ -1,0 +1,20 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
+export const PORT = process.env.PORT || 3000;
+export const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/progcap_sfa';
+export const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_here';
+export const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
+export const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || 'your_refresh_secret_here';
+export const JWT_REFRESH_EXPIRES_IN = process.env.JWT_REFRESH_EXPIRES_IN || '30d';
+export const MSG91_API_KEY = process.env.MSG91_API_KEY || '';
+export const MSG91_SENDER_ID = process.env.MSG91_SENDER_ID || '';
+export const MSG91_TEMPLATE_ID = process.env.MSG91_TEMPLATE_ID || '';
+export const AWS_REGION = process.env.AWS_REGION || 'ap-south-1';
+export const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID || '';
+export const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY || '';
+export const AWS_BUCKET_NAME = process.env.AWS_BUCKET_NAME || 'progcap-sfa-docs';
+export const FCM_SERVICE_ACCOUNT_JSON = process.env.FCM_SERVICE_ACCOUNT_JSON || '{}';
+export const GOOGLE_MAPS_API_KEY = process.env.GOOGLE_MAPS_API_KEY || '';
+export const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
+export const ADMIN_URL = process.env.ADMIN_URL || 'http://localhost:5174';

@@ -1,0 +1,41 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Progcap SFA Backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --experimental-specifier-resolution=node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.x",
+    "@aws-sdk/s3-request-presigner": "^3.x",
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.x",
+    "bcryptjs": "^2.x",
+    "compression": "^1.x",
+    "cors": "^2.x",
+    "csv-parser": "^3.x",
+    "dayjs": "^1.x",
+    "dotenv": "^16.x",
+    "express": "^4.18.x",
+    "express-rate-limit": "^7.x",
+    "express-validator": "^7.x",
+    "fast-csv": "^5.x",
+    "firebase-admin": "^12.x",
+    "helmet": "^7.x",
+    "jsonwebtoken": "^9.x",
+    "mongoose": "^8.x",
+    "morgan": "^1.x",
+    "multer": "^1.x",
+    "multer-s3": "^3.x",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.x",
+    "socket.io": "^4.x",
+    "uuid": "^9.x"
+  },
+  "devDependencies": {
+    "nodemon": "^3.x"
+  }
+}
